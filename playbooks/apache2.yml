@@ -1,0 +1,14 @@
+---
+- name: Deploy Apache
+  hosts: all
+  roles:
+    - httpd
+  #tasks:
+    # - name: Install Apache
+    #   ansible.builtin.apt:
+    #     name: apache2
+    #     state: present
+    # - name: Ensure Nginx is not here
+    #   ansible.builtin.apt:
+    #     name: nginx
+    #     state: absent
